@@ -1,7 +1,7 @@
 # Customer-Analytics
 Analyzing customer behavior by predictive analytics
 
-### Customer Lifetime Value (CLV)
+### Customer Lifetime Value(CLV.py)
 CLV analysis uses a python library - [lifetimes](https://lifetimes.readthedocs.io/en/latest/index.html)
 
 ### Customer Segmentation 
