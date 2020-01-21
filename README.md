@@ -1,12 +1,8 @@
 # Customer-Analytics
 Analyzing customer behavior by predictive analytics
 
-<<<<<<< HEAD
 ## Introduction
 ### Customer Lifetime Value (CLV)
-=======
-### Customer Lifetime Value(CLV.py)
->>>>>>> 7ccb93a6bffb6e2e53f09b2df25b942c8427c989
 CLV analysis uses a python library - [lifetimes](https://lifetimes.readthedocs.io/en/latest/index.html)
 
 ### Customer Segmentation 
@@ -41,8 +37,8 @@ The data has 541909 rows and 8 columns.
 Identify the cancelled orders (Quantity < 0)
 Find the corresponding orders that have been cancelled 
 (InvoiceDate of cancelled order >  InvoiceDate of original order && The value of other columns are the same)
-- For cancelled records with one counterpart: delete
-- For cancelled records with multiple counterparts: delete the recent transaction
+	- For cancelled records with one counterpart: delete
+	- For cancelled records with multiple counterparts: delete the recent transaction
 4. Create a Sales column (Quantity * UnitPrice)
 
 Output: [cleaned_data.csv](https://github.com/lizzzfang/Customer-Analytics/tree/master/data/cleaned_data.csv)
@@ -52,6 +48,7 @@ RFM stands for the three dimensions:
 - Recency: How recently did the customer purchase?
 - Frequency: How often do they purchase?
 - Monetary Value: How much do they spend?
+
 There could be different definitions.
 In lifetimes library:
 > frequency represents the number of repeat purchases the customer has made. This means that it’s one less than the total number of purchases. This is actually slightly wrong. It’s the count of time periods the customer had a purchase in. So if using days as units, then it’s the count of days the customer had a purchase on.
